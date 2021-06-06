@@ -1,27 +1,189 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>m152-10-ap18a Web UI</title>
-<link rel="shortcut icon" href="https://kubernetes.io/images/favicon.png">
-<meta charset="utf-8" content="">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these 
-        
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>m152-10-ap18a Web UI</title>
+  <link rel="shortcut icon" href="https://kubernetes.io/images/favicon.png">
+  <meta charset="utf-8" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these
+
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
     integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Swiper JS Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Slick JS Library -->
+  <!-- <link rel="stylesheet" href="lib/slick/slick.css">
+  <link rel="stylesheet" href="lib/slick/slick-theme.css">
+  <script src="lib/slick/slick.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="center">m152-10-ap18a Web UI</h1>
-        <a href="installation.html">Link zu installation</a>
-        <a href="asani.html">Link zu meiner Seite</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Modul 152</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="installation.html">Installation</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <header class="cust-bg-light text-center">
+    <div class="container1">
+      <h1>m152-10-ap18a Web UI</h1>
+    </div>
+  </header>
+
+  <section id="video_section" class="scroll_section">
+    <div class="container">
+      <h2 class="text-center pb-5">Video</h2>
+      <div class="row">
+        <div class="col-md-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus aliquam eveniet aliquid eos molestiae nisi labore similique,
+            magni vero, quo aperiam voluptas expedita possimus iure deserunt nesciunt nulla blanditiis dolorum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eligendi harum iusto excepturi tempore dicta error officiis maiores quasi ut aspernatur voluptates,
+            quo officia id ad corporis impedit dolor. Fuga, sunt.</p>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div id="video_interview">
+            <video width="320" height="240" controls>
+              <source src="media/20180904_142448.mp4">
+              <track src="media/subtitles/interview_subtitles.vtt" kind="subtitles" srclang="de" label="Deutsch">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audio_section" class="cust-bg-dark scroll_section">
+    <div class="container">
+      <h2 class="text-center pb-5">Audio</h2>
+      <div class="row">
+        <div class="col-md-5">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Minus aliquam eveniet aliquid eos molestiae nisi labore similique,
+            magni vero, quo aperiam voluptas expedita possimus iure deserunt nesciunt nulla blanditiis dolorum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eligendi harum iusto excepturi tempore dicta error officiis maiores quasi ut aspernatur voluptates,
+            quo officia id ad corporis impedit dolor. Fuga, sunt.</p>
+        </div>
+        <div class="col-md-5 offset-md-2">
+          <div id="audio_vonalleine">
+            <!-- <h6>King Oli - Von Alleine</h6>
+            <audio controls>
+              <source src="media/King Oli - Von Alleine (Audio).mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio> -->
+            <div class="wrapper">
+              <a href="#" title="Listen to the song" class="player-controls">
+                <span class="audio-label">
+                  <span>
+                    Von Alleine
+                    <small>King Oli</small>
+                  </span>
+                </span>
+                <span class="play"></span>
+                <span class="pause"></span>
+              </a>
+              <audio id="player">
+                <source src="" type="audio/mp3">
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carousel_section" class="cust-bg-accent  scroll_section">
+    <div class="container">
+      <h2 class="text-center pb-5">Karusell</h2>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="demo">
+            <!-- <div><img src="images/memes/drake_meme.webp" alt="" srcset=""></div> -->
+            <!-- <div><img src="https://image.winudf.com/v2/image/Y29tLm5hdHVyZXdhbGxwYXBlci5rZHhpbWFuX3NjcmVlbl80XzE1MjQzOTg0OTJfMDkx/screen-4.jpg?fakeurl=1&type=.jpg"  alt="" srcset=""></div>
+              <div><img src="https://wallpapercave.com/wp/kjh8eTP.jpg" alt="" srcset=""></div> -->
+
+            <!-- <img src="https://image.winudf.com/v2/image/Y29tLm5hdHVyZXdhbGxwYXBlci5rZHhpbWFuX3NjcmVlbl80XzE1MjQzOTg0OTJfMDkx/screen-4.jpg?fakeurl=1&type=.jpg"  alt="" srcset="">
+              <img src="https://wallpapercave.com/wp/kjh8eTP.jpg" alt="" srcset=""> -->
+
+            <img src="/images/memes/s7YHY9id60gyEjZlDuI2C_REK0O7zD4SI37YaxWiekc.jpg" alt="" srcset="">
+            <img src="images/memes/sponsor_meme.jpg" alt="" srcset="">
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section id="animation_section" class="scroll_section">
+    <div class="container">
+      <h2 class="text-center pb-5">Animation</h2>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="svg">
+              <object data="images/mysvg.svg" type="image/svg+xml"></object>
+            </div> 
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/carousel.js"></script>
+  <script src="js/audio_animation.js"></script>
+  <script src="js/scroll_animation.js"></script>
 </body>
+
 </html>
